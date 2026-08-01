@@ -5,19 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Torneos Gamer</title>
+
 </head>
 
 <body>
     <!-- Encabezado Principal -->
     <header>
         <!-- Actividad 1. Crear el título "Dashboard de Torneos Gamer" -->
+         <h1>Dashboard de Torneos Gamer</h1>
     </header>
     <!-- Contenido Principal -->
     <main>
         <!-- Actividad 1. Formulario de Registro (15 puntos) -->
+        <div>
+            <p>
+                <p>Ingresar nombre del torneo:</p>
+                <input type="text" name="" id="txtNombreTorneo"/>
+                <span id="txtErrorNombre"></span>
+            </p>
+            <p>
+                <p>Selecciona categoria:</p>
+                <select id="cmpSeleccion" name="Categoria">
+                <option value="">-- Selecciona una opción --</option>
+                <option value="Lucha">Lucha</option>
+                <option value="Estrategia">Estrategia</option>
+                <option value="Arcade">Arcade</option>
+                <option value="DeportesAventura">Deportes y aventura</option>
+                </select>
+                <span id="txtErrorSeleccion"></span>
+            </p>
+            <p>
+                <p>Ingresa el numero de participantes:</p>
+                <input type="number" name="" id="txtParticipantes"/>
+                <span id="txtErrorParticipantes"></span>
+            </p>
+            <p>
+                <p>Ingresa el valor de la incripcion:</p>
+                <input type="number" name="" id="txtValorIncripcion"/>
+                <span id="txtErrorValorIncripcion"></span>    
+            </p>
+            <p>
+                <p>Ingresar el correo Electronico</p>
+                <input type="text" name="" id="txtEmail"/>
+                <span id="txtErrorEmail"></span>
+            </p>
+            <p>
+                <input type="button" id="cmpBotonRegistrar" value="REGISTRAR TORNEO"/>
+            </p>
+        </div> 
+        
         <!-- Actividad 2. Crear la tabla (10 puntos) -->
+        <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Participantes</th>
+                    <th>Valor de inscripción</th>
+                    <th>Email</th>
+                    <th> Recaudación estimada.</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+
+            </tbody>
+        </table>
+        </div>
     </main>
     <!-- Enlace al archivo de JavaScript de la evaluación -->
+<script src="dashboard.js"></script>
+<script src="utilitarios.js"></script>
 </body>
 
 </html>
